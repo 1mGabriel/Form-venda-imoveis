@@ -1,0 +1,149 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #e2e9f0;
+}
+h1,h2,h3,h4,h5{
+    color: #333 ;
+}
+p,label{
+    color: #444;
+}
+input{
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+   
+}
+.required-field{
+    color: red;
+}
+
+input[type = "text"],
+input[type = "number"],
+input[type = "date"],
+input[type = "file"],
+textarea{
+    width: 400px;
+}
+textarea{
+    padding: 10px 5px;
+
+}
+/* page header */
+.header h3{
+    height: 140px;
+    padding: 30px;
+    background-color: #424d80;
+    color: #fff;
+    margin-top: 0;
+}
+/* form-container */
+.form-container{
+    background-color: #ffffff;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -240px;
+
+}
+/* form-header */
+.img{
+    height: 200px;
+    position: relative;
+    top: -250px;
+    right: -70rem;
+}
+
+.form-header{
+    border-bottom:  1px solid #dfdfdf;
+    height: 62px;
+}
+.form-header p {
+    color: #424d80;
+    border-bottom: 2px solid #424d80;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+}
+/* form-body */
+
+.form-body{
+   padding: 20px; 
+}
+.form-title{
+    margin-bottom: 15px;
+}
+.form-body p {
+    margin-bottom: 20px;
+}
+.box-input{
+    margin-bottom: 25px;
+}
+.block{
+    display: block;
+}
+
+.option-box{
+    display: inline-block;
+    margin: 0 30px 30px 0;
+}
+.optional-list{
+    list-style: none;
+}
+.box-input p{
+    margin-bottom: 15px;
+
+}
+.btn-submit{
+    background-color:#424d80;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.btn-submit:hover{
+    background-color: #fff;
+    border-color:#424d80;
+    color: #424d80;
+}
+
+@media(max-width:1024px) {
+    .img{
+        position: relative;
+        right: -50rem ;
+    }
+}
+@media(max-width:768px) {
+    .img{
+        height: 100px;
+        position: relative;
+        right: -40rem ;
+        bottom: 20px;
+        margin-top: 10px;
+    }
+}
+@media(max-width:425px) {
+    .img{
+       display: none; 
+    }
+    .form-container{
+        position: relative;
+        top: -110px;
+        width: 425px;
+    }
+    .container{
+        height: 1100px;
+    }
+}
